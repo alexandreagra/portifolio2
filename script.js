@@ -1,3 +1,4 @@
+//HEADER FUNCTION
 const body = document.body
 let lastScroll = 0
 
@@ -20,3 +21,4 @@ window.addEventListener('scroll', () =>{
 
     lastScroll = currentScroll
 })
+

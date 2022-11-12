@@ -38,7 +38,7 @@ header {
     left: 0;
     right: 0;
     z-index: 9999;
-    transition: all .30s ease-in-out;
+    transition: all .20s ease;
 }
 
 .scroll-down header {
@@ -48,7 +48,8 @@ header {
 .scroll-up header {
   background-color: white;
   filter: drop-shadow(0 -10px 20px lightgrey);
-}
+} 
+
 
 .logo img {
     max-width: 100%;
@@ -202,7 +203,81 @@ span {
     height: auto;
 }
 
-.twice-items{
+.sub-service{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-img img{
+    max-width: 100%;
+    width: 580px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.sub-box {
+    padding: 45px;
+    transition: ease .50s;
+    cursor: pointer;
+}
+
+.sub-box {
+    padding: 45px;
+    transition: ease .50s;
+    cursor: pointer;
+}
+
+.sub-box2 {
+    padding: 45px;
+    transition: ease .50s;
+    cursor: pointer;
+}
+
+.sub-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.sub-box2 h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.sub-box p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 29px;
+}
+
+.sub-box2 p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 29px;
+}
+
+
+.sub-box:hover{
+    background-color: white;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(1.80deg) rotateY(5.23deg) scale3d(1.03, 1.03, 1.03);
+}
+
+.sub-box2:hover{
+    background-color: white;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(-1.80deg) rotateY(-5.23deg) scale3d(1.03, 1.03, 1.03);
+}
+
+/*.twice-items{
     display: flex;
     gap: 8px;
     color: var(--main-color);
@@ -211,4 +286,4 @@ span {
 .twice-items i {
     font-size: 8px;
     margin-top: 10px;
-}
+} */
