@@ -33,12 +33,21 @@ header {
     background: transparent;
     position: fixed;
     width: 100%;
-    padding: 30px 18%;
+    padding: 20px 18%;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    transition: all 0.30s ease-in-out;
+    transition: all .30s ease-in-out;
+}
+
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  background-color: white;
+  filter: drop-shadow(0 -10px 20px lightgrey);
 }
 
 .logo img {
@@ -80,7 +89,7 @@ header {
 #menu-icon {
     font-size: 35px;
     color: black;
-    z-index: 11;
+    z-index: 1000;
     cursor: pointer;
     display: none;
 }
