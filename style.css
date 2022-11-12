@@ -17,6 +17,7 @@
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
+    --nav-height: 50px;
 
 }
 
@@ -34,14 +35,15 @@ header {
     width: 100%;
     padding: 30px 18%;
     top: 0;
+    left: 0;
     right: 0;
-    z-index: 10;
-    transition: .3s;
+    z-index: 9999;
+    transition: all 0.30s ease-in-out;
 }
 
 .logo img {
     max-width: 100%;
-    width: 200px;
+    width: 260px;
     height: auto;
 }
 
@@ -91,7 +93,7 @@ header {
     border-radius: 30px;
     color: black;
     letter-spacing: 1px;
-    font-size: var(--p-font);
+    font-size: 1rem;
     font-weight: 500;
     transition: ease .30s;
 }
@@ -110,7 +112,7 @@ section {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(assets/bg-2.jpg);
+
     background-position: left center;
     position: relative;
     display: grid;
@@ -125,13 +127,6 @@ section {
     font-size: var(--big-font);
     line-height: 1;
     font-weight: 500;
-}
-
-.home-img img {
-    margin-left: 80px;
-    max-width: 100%;
-    width: 490px;
-    height: auto;
 }
 
 .home-text h5 {
@@ -164,7 +159,7 @@ span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--alternative-color);
+    background: var(--main-color);
     font-size: 17px;
     color: white;
     margin-right: 22px;
@@ -189,4 +184,22 @@ span {
 
 .btn:hover{
     transform: scale(1.1);
+}
+
+.home-img img {
+    margin-left: 80px;
+    max-width: 100%;
+    width: 584px;
+    height: auto;
+}
+
+.twice-items{
+    display: flex;
+    gap: 8px;
+    color: var(--main-color);
+}
+
+.twice-items i {
+    font-size: 8px;
+    margin-top: 10px;
 }
