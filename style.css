@@ -191,6 +191,7 @@ span {
     padding: 10px 40px;
     border-radius: 2px;
     transition: ease .40s;
+    border-radius: 50px;
 }
 
 .btn:hover{
