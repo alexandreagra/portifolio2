@@ -1,7 +1,7 @@
 #prog-modal {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.932);
+    background-color: rgba(0, 0, 0, 0.945);
     color: white;
     position: fixed;
     top: 0px;
@@ -10,5 +10,5 @@
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    animation: appear 2s backwards;
+    animation: appear 1.4s backwards;
 }
