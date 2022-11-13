@@ -22,3 +22,26 @@ window.addEventListener('scroll', () =>{
     lastScroll = currentScroll
 })
 
+//OPEN MODAL PROG
+
+const modalprog = document.querySelector('.prog-skills')
+modalprog.addEventListener('click', openModal)
+
+function openModal() {
+    document.querySelector('#prog-modal').style.display = 'flex'
+}
+
+//CLOSE MODAL PROG
+const closeModal = document.querySelector('.close-btn-prog')
+closeModal.addEventListener('click', modalc)
+
+function modalc() {
+    document.querySelector('#prog-modal').style.display = 'none'
+}
+
+
+
+
+
+
+

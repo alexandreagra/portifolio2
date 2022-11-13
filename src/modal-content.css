@@ -1,0 +1,35 @@
+.modal-content {
+    text-align: center;
+    padding: 40px 18%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 2px 20px black;
+    transition: 0.8s;
+}
+
+.modal-content img {
+    width: 520px;
+}
+
+.modal-content h1{
+    font-size: 60px;
+    padding: 20px;
+}
+
+.modal-content p {
+    font-size: 28px;
+    padding: 20px;
+}
+
+.close-btn-prog {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 2px 20px black;
+}

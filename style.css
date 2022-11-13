@@ -18,7 +18,6 @@
     --h2-font: 3rem;
     --p-font: 1.1rem;
     --nav-height: 50px;
-
 }
 
 body{
@@ -276,14 +275,3 @@ span {
     will-change: transform;
     transform: perspective(1000px) rotateX(-1.80deg) rotateY(-5.23deg) scale3d(1.03, 1.03, 1.03);
 }
-
-/*.twice-items{
-    display: flex;
-    gap: 8px;
-    color: var(--main-color);
-}
-
-.twice-items i {
-    font-size: 8px;
-    margin-top: 10px;
-} */
