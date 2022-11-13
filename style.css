@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -14,7 +14,7 @@
     --second-color: #68666e;
     --main-color: #6ac7c2;
     --alternative-color: #C4401B;
-    --big-font: 5rem;
+    --big-font: 4.6rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
     --nav-height: 50px;
@@ -121,14 +121,16 @@ section {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-
-    background-position: left center;
+    background: url();
+    background-position: center;
+    background-attachment: fixed;
     position: relative;
     display: grid;
     background-repeat: no-repeat;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 3rem;
+    animation: appear 2s backwards;
 }
 
 .home-text h1 {
@@ -274,4 +276,15 @@ span {
     border-radius: 12px;
     will-change: transform;
     transform: perspective(1000px) rotateX(-1.80deg) rotateY(-5.23deg) scale3d(1.03, 1.03, 1.03);
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
